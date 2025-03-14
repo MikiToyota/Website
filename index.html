@@ -56,51 +56,60 @@
                     <p class="lead cover-copy">A bilingual storyteller and strategist, crafts impactful narratives to connect businesses with the Japanese market.</p>
                     <div>
                         <a class="nav-link nav-social d-inline-block mx-2" href="https://jp.linkedin.com/in/miki-toyota" title="LinkedIn">
-                            <i class="fab fa-linkedin" style="font-size: 2rem; margin: 0 1.5rem;"></i>
+                            <i class="fab fa-linkedin" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
                         </a>
                         <a class="nav-link nav-social d-inline-block mx-2" href="mailto:mikitoyota38@gmail.com" title="Email">
-                            <i class="fas fa-envelope" style="font-size: 2rem; margin: 0 1.5rem;"></i>
+                            <i class="fas fa-envelope" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
                         </a>
                         <a class="nav-link nav-social d-inline-block mx-2" href="https://mikitoyota.substack.com/" title="Substack">
-                            <i class="fas fa-newspaper" style="font-size: 2rem; margin: 0 1.5rem;"></i>
+                            <i class="fas fa-newspaper" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
                         </a>
                         <a class="nav-link nav-social d-inline-block mx-2" href="https://medium.com/@mikitoyota" title="Medium">
-                            <i class="fab fa-medium" style="font-size: 2rem; margin: 0 1.5rem;"></i>
+                            <i class="fab fa-medium" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Services Section -->
+                <hr style="border-color: #667A90; border-width: 2px;">
+                <h1 class="text-center">Services</h1>
                 <div class="inner services-section">
-                    <h2 class="h3 text-center">Services</h2>
                     <div class="row text-center">
                         <div class="col-md-4">
                             <i class="fas fa-pen-nib fa-3x mb-3"></i>
                             <h4>Transcreation and Copywriting</h4>
-                            <p>Crafting culturally-sensitive narratives that resonate globally and locally.</p>
+                            <p style="color: #DEA193;">Crafting culturally-sensitive narratives that resonate globally and locally.</p>
                         </div>
                         <div class="col-md-4">
                             <i class="fas fa-language fa-3x mb-3"></i>
                             <h4>Cross-Cultural Communication</h4>
-                            <p>Bridging gaps through cultural consultancy and bilingual communication.</p>
+                            <p style="color: #DEA193;">Bridging gaps through cultural consultancy and bilingual communication.</p>
                         </div>
                         <div class="col-md-4">
                             <i class="fas fa-chart-line fa-3x mb-3"></i>
                             <h4>Brand Engagement Strategy</h4>
-                            <p>Enhancing brand visibility through targeted PR and marketing campaigns.</p>
+                            <p style="color: #DEA193;">Enhancing brand visibility through targeted PR and marketing campaigns.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Substack Feed Embed -->
+                <hr style="border-color: #667A90; border-width: 2px;">
+                <h1 class="text-center mb-4">Blog</h1>
                 <div id="substack-feed-embed"></div>
+                <hr style="border-color: #667A90; border-width: 2px;">
 
                 <script>
                   window.SubstackFeedWidget = {
                     substackUrl: "mikitoyota.substack.com",
                     posts: 12,
+                    filter: "top",
                     layout: "center",
-                    hidden: ["comments"]
+                    hidden: ["comments"],
+                    colors: {
+                      primary: "#FFFFFF",
+                      secondary: "#DEA193",
+                      background: "#FFFFFF00",
+                    }
                   };
                 </script>
                 <script src="https://substackapi.com/embeds/feed.js" async></script>
