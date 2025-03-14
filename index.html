@@ -92,6 +92,19 @@
                     </div>
                 </div>
 
+                <!-- Substack Feed Embed -->
+                <div id="substack-feed-embed"></div>
+
+                <script>
+                  window.SubstackFeedWidget = {
+                    substackUrl: "mikitoyota.substack.com",
+                    posts: 12,
+                    layout: "center",
+                    hidden: ["comments"]
+                  };
+                </script>
+                <script src="https://substackapi.com/embeds/feed.js" async></script>
+
                 <!-- Copyright -->
                 <p class="copyright">&copy; 2025 Miki Toyota. All rights reserved.</p>
             </div>
