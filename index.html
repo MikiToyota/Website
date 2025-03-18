@@ -1,184 +1,939 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NVL8HSXN1B"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-NVL8HSXN1B');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Miki Toyota - A bilingual storyteller helping businesses connect with the Japanese market through transcreation, cross-cultural communication, and brand engagement strategy.">
-    <meta name="keywords" content="branding strategy, brand engagement, marketing strategy, content marketing, cross-cultural communication, transcreation, localization strategy, cultural consultancy, Japanese market, global expansion, international business, business localization, bilingual storytelling, copywriting, content strategy, PR campaigns, Miki Toyota, business consultant, marketing strategist, translation services">
-    <meta property="og:title" content="Miki Toyota - Bridging Cultures, Building Brands">
-    <meta property="og:description" content="Helping businesses connect with the Japanese market through transcreation, branding, and marketing strategy.">
-    <meta property="og:image" content="https://mikitoyota.substack.com/img/mt.jpg">
-    <meta property="og:url" content="https://mikitoyota.substack.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Miki Toyota">
-    <title>Miki Toyota - Bridging Cultures, Building Brands</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
-    <style>
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .cover-container {
-            padding-top: 3rem;
-            flex: 1;
-        }
-        .inner.cover img {
-            margin: 1rem 0;
-            border-radius: 10px;
-        }
-        .inner.cover .lead {
-            margin-bottom: 2rem;
-        }
-        .inner {
-            margin-bottom: 3rem;
-        }
-        .services-section {
-            margin-bottom: 2rem; /* Ensure enough space before copyright */
-        }
-        .copyright {
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #666; /* Subtle text color */
-        }
-        .logo-img {
-            max-width: 300px; /* Adjust as needed */
-            height: auto;
-            margin-top: 20px;
-        }
-    </style>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Miki Toyota",
-      "jobTitle": "Bilingual Storyteller, Transcreation Expert & Marketing Strategist",
-      "url": "https://mikitoyota.substack.com/",
-      "sameAs": [
-        "https://jp.linkedin.com/in/miki-toyota",
-        "https://medium.com/@mikitoyota"
-      ],
-      "description": "Miki Toyota is a bilingual storyteller and marketing strategist specializing in transcreation, branding, cross-cultural communication, and business localization for the Japanese market. With expertise in brand engagement strategy and content marketing, Miki helps businesses craft compelling narratives for global expansion.",
-      "knowsAbout": [
-        "branding strategy",
-        "transcreation",
-        "cross-cultural communication",
-        "business localization",
-        "content marketing",
-        "Japanese market",
-        "global expansion",
-        "PR campaigns",
-        "copywriting",
-        "translation services"
-      ]
-    }
-    </script>
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - EasyFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body id="top">
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <!-- Main Content -->
-                <div class="inner cover text-center">
-                    <h1 class="cover-heading">Miki Toyota</h1>
-                    <img src="img/mt.jpg" alt="Miki Toyota" class="img-fluid" style="max-width: 200px; height: auto;">
-                    <p class="lead cover-copy">A bilingual storyteller and strategist, crafts impactful narratives to connect businesses with the Japanese market.</p>
-                    <div>
-                        <a class="nav-link nav-social d-inline-block mx-2" href="https://jp.linkedin.com/in/miki-toyota" title="LinkedIn">
-                            <i class="fab fa-linkedin" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
-                        </a>
-                        <a class="nav-link nav-social d-inline-block mx-2" href="mailto:mikitoyota38@gmail.com" title="Email">
-                            <i class="fas fa-envelope" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
-                        </a>
-                        <a class="nav-link nav-social d-inline-block mx-2" href="https://mikitoyota.substack.com/" title="Substack">
-                            <i class="fas fa-newspaper" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
-                        </a>
-                        <a class="nav-link nav-social d-inline-block mx-2" href="https://medium.com/@mikitoyota" title="Medium">
-                            <i class="fab fa-medium" style="font-size: 2rem; margin: 0 1.5rem; color: #DEA193;"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Services Section -->
-                <hr style="border-color: #667A90; border-width: 2px;">
-                <h1 class="text-center">Services</h1>
-                <div class="inner services-section">
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <i class="fas fa-pen-nib fa-3x mb-3"></i>
-                            <h4>Transcreation and Copywriting</h4>
-                            <p style="color: #DEA193;">Crafting culturally-sensitive narratives that resonate globally and locally.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-language fa-3x mb-3"></i>
-                            <h4>Cross-Cultural Communication</h4>
-                            <p style="color: #DEA193;">Bridging gaps through cultural consultancy and bilingual communication.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-chart-line fa-3x mb-3"></i>
-                            <h4>Brand Engagement Strategy</h4>
-                            <p style="color: #DEA193;">Enhancing brand visibility through targeted PR and marketing campaigns.</p>
-                        </div>
-                    </div>
-                </div>
+<body class="index-page">
 
-                <hr style="border-color: #667A90; border-width: 2px;">
-                <h1 class="text-center mb-4">Blog</h1>
-                <div id="substack-feed-embed"></div>
-                <hr style="border-color: #667A90; border-width: 2px;">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-                <script>
-                  window.SubstackFeedWidget = {
-                    substackUrl: "mikitoyota.substack.com",
-                    posts: 12,
-                    filter: "top",
-                    layout: "center",
-                    hidden: ["comments"],
-                    colors: {
-                      primary: "#FFFFFF",
-                      secondary: "#DEA193",
-                      background: "#FFFFFF00",
-                    }
-                  };
-                </script>
-                <script src="https://substackapi.com/embeds/feed.js" async></script>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logov9.webp" alt="">
+        <h1 class="sitename">Miki Toyota</h1>
+      </a>
 
-                <!-- Logo -->
-                <div class="text-center">
-                    <img src="img/logov7.png" alt="Miki Toyota Logo" class="logo-img">
-                </div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Events</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+         <!--
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+            -->
+          <li><a href="#heroexit">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-                <!-- Copyright -->
-                <p class="copyright">&copy; 2025 Miki Toyota. All rights reserved.</p>
+      <div class="header-social-links">
+        <a href="mailto:mikitoyota38@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://jp.linkedin.com/in/miki-toyota" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://medium.com/@mikitoyota" class="medium"><i class="bi bi-medium"></i></a>
+        <a href="https://mikitoyota.substack.com" class="substack"><i class="bi bi-substack"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Bridging Cultures</h2>
+            <p class="lead">A bilingual storyteller and strategist, crafts impactful narratives to connect businesses with the Japanese market.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a href="#heroexit" class="btn btn-outline">Let's Connect</a>
             </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="assets/img/profile/profile-1.webp" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
         </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>A curious Tokyo-based writer exploring Japan’s stories, global culture, and the overlooked details that shape how we live, connect, and grow.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/profile/profile-square-2.webp" alt="Profile Image" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <span class="subtitle">About Me</span>
+
+              <h2>Cultural Consultant &amp; Brand Specialist</h2>
+
+              <p class="lead mb-4">I’m a writer and storyteller based in Tokyo. Ever since I was a child, I had a genuine curiosity about the world. I was that kid who couldn’t stop asking “why?”—much to my dad’s amusement (and occasional exhaustion). But for a long time, I didn’t see curiosity as something to be proud of. There’s a saying in Japan: The nail that sticks out gets hammered down. Growing up, I often felt the pressure to fit in, so I learned to quiet my questions. But deep down, I knew that asking questions and connecting with others brought me so much joy. Over time, my curiosity led me to teach myself English, connect with people from different cultures, and explore over 16 countries.</p>
+
+              <p class="mb-4"> Eventually, I realized that my curiosity wasn’t a flaw—it was my superpower. It’s how I make sense of the world and help others do the same.</p>
+
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Miki Toyota</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                    <span class="value"><a href="mailto:mikitoyota38@gmail.com"><i class="bi bi-envelope"></i></a></span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Occupation</span>
+                      <span class="value">Writer & Cultural Consultant</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Nationality</span>
+                      <span class="value">Japanese</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="signature mt-4">
+                <div class="signature-image">
+                  <img src="assets/img/misc/signature.webp" alt="" class="img-fluid">
+                </div>
+                <div class="signature-info">
+                  <h4>Miki Toyota</h4>
+                  <p>Writer & Cultural Consultant</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Business Localization</h3>
+              <p></p>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3>Copywriting</h3>
+              <p></p>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3>Transcreation</h3>
+              <p></p>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>Translation</h3>
+              <p></p>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Events</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>These gatherings are designed to connect Japanese and international communities, creating opportunities for authentic dialogue, learning, and collaboration. Through language, storytelling, and shared experiences, we aim to cultivate understanding and lasting relationships.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>Upcoming Events</h2>
+                <p class="lead">Dedicated to fostering inclusive spaces, these events focus on meaningful connections, cultural exchange, and shared learning experiences. Stay tuned for opportunities to engage, grow, and connect!</p>
+
+                <!--
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Etiam Industries</h4>
+                      <span class="period">Jun, 2023 - Current</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Project Lead</h3>
+                      <p class="description">Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+                    </div>
+                  </div>
+                -->
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">The Art of Conversation: Make Every Interaction Count Part 2</h4>
+                      <span class="period">March 18th 2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">About the event</h3>
+                      <p class="description">​In today’s fast-paced world, making a great first impression is key. Whether you're an introvert, a professional frustrated with networking, or someone seeking to sharpen your cross-cultural communication skills, this workshop is designed for you. <a href="https://lu.ma/1c17pyqw">Register here</a></p>
+                    </div>
+                  </div>
+
+                  <!--
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Nullam Corp</h4>
+                      <span class="period">2019 - 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">About the event</h3>
+                      <p class="description">
+                        Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.
+                      </p>
+                      <ul>
+                        <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                        <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                        <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                        <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+                -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="timeline-left">
+                    <h4 class="company">The Art of Conversation: Make Every Interaction Count Part 3</h4>
+                    <span class="period">Q3 2025 TBD</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">About the event</h3>
+                    <p class="description">Stay Tuned!</p>
+                  </div>
+                </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">The Art of Conversation: Make Every Interaction Count Part 4</h4>
+                      <span class="period">Q4 2025 TBD</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">About the event</h3>
+                      <p class="description">Stay Tuned!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BACKUP SECTION IN CASE WE NEED TO HAVE PREVIOUS EVENTS
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>My Education</h2>
+                <p class="lead">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing.</p>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Vestibulum University</h4>
+                      <span class="period">2017-2019</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Diploma in Consequat</h3>
+                      <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Nullam Corp</h4>
+                      <span class="period">2019 - 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Master of Fine Arts &amp; Graphic Design</h3>
+                      <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">Vestibulum University</h4>
+                      <span class="period">2015-2019</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Bachelor of Fine Arts &amp; Graphic Design</h3>
+                      <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Real Projects, Real Impact – Explore My Work.</p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Work</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-graphics">Graphics</li>
+              <li data-filter=".filter-motion">Motion</li>
+              <li data-filter=".filter-brand">Branding</li>
+            </ul>
+          </div>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="#heroexit" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Design</span>
+                  <h3>Modern Dashboard Interface</h3>
+                  <p>Localized UI and UX for Japanese business users.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="#heroexit" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Graphics</span>
+                  <h3>Creative Brand Identity</h3>
+                  <p>Designed branding to align with Japanese market aesthetics.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                      <a href="#heroexit" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Motion</span>
+                  <h3>Product Animation Reel</h3>
+                  <p>Created animations tailored to Japanese storytelling styles.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                      <a href="#heroexit" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Branding</span>
+                  <h3>Luxury Brand Package</h3>
+                  <p>Refined branding to reflect Japanese luxury market expectations.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="#heroexit" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Design</span>
+                  <h3>E-commerce Platform</h3>
+                  <p>Optimized for Japanese consumer behavior and payment preferences.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="#heroexit" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Graphics</span>
+                  <h3>Digital Art Collection</h3>
+                  <p>Blended Japanese cultural elements with modern design.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Bridging cultures with words. Discover how Miki Toyota has helped brands and professionals make a lasting impact in Japan and beyond.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Sed ut perspiciatis unde omnis</h2>
+                    <p>
+                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    </p>
+                    <p>
+                      Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-7.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Saul Goodman</h3>
+                        <span>Client</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Nemo enim ipsam voluptatem</h2>
+                    <p>
+                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    </p>
+                    <p>
+                      Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-8.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Sara Wilsson</h3>
+                        <span>Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-8.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>
+                      Labore nostrum eos impedit
+                    </h2>
+                    <p>
+                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    </p>
+                    <p>
+                      Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-9.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Matt Brandon</h3>
+                        <span>Freelancer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-9.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Impedit dolor facilis nulla</h2>
+                    <p>
+                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    </p>
+                    <p>
+                      Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-10.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Jena Karlis</h3>
+                        <span>Store Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-10.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+          </div>
+
+          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Your brand has a story—let’s make sure it’s heard and understood worldwide.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h2 class="fw-bold mb-4 servies-title">Strategic Storytelling & Localization for Impactful Brands</h2>
+            <p class="mb-4">Effective communication is more than translation—it’s about connection. I specialize in localization, brand strategy, and storytelling to help your business thrive.</p>
+            <a href="#heroexit" class="btn btn-outline-primary">Discover How I Can Help</a>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-4">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item">
+              <i class="bi bi-globe2 icon"></i>
+                  <h3><a href="#heroexit">Cross-Cultural Brand Strategy</a></h3>
+                  <p>Craft messaging that resonates across cultural and linguistic boundaries. Align your brand with local values to build lasting trust.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-item">
+              <i class="bi bi-pencil-square icon"></i>
+                  <h3><a href="#heroexit">Multilingual Copywriting & Editing</a></h3>
+                  <p>From websites to marketing materials, I provide compelling copy in both Japanese and English, ensuring clarity, nuance, and engagement.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-item">
+              <i class="bi bi-book-half icon"></i>
+                  <h3><a href="#heroexit">Transcreation & Storytelling</a></h3>
+                  <p>Go beyond translation—adapt your content for cultural impact while maintaining authenticity and emotional connection.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-item">
+              <i class="bi bi-signpost-2-fill icon"></i>
+                  <h3><a href="#heroexit">Market Localization & Consulting</a></h3>
+                  <p>Navigate the Japanese market with confidence. Gain insights into cultural preferences, industry trends, and effective communication strategies.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+    <!-- Floating Shapes Divider -->
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
     </div>
 
-    <!-- Scripts -->
-    <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="scripts/main.js?ver=1.2.0"></script>
+    <!-- Blog Section -->
+    <section id="blog" class="blog section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blog</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>I run a free newsletter called <strong><em>Stories Beyond Japan</em></strong>, a 100% reader-supported space. To stay updated with new posts and support my writing, consider subscribing—it's greatly appreciated!</p>
+        <p></p>
+        <div id="custom-substack-embed"></div>
+        <script>
+          window.CustomSubstackWidget = {
+            substackUrl: "mikitoyota.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "custom",
+            colors: {
+              primary: "#DEA193",
+              input: "#ffffff",
+              email: "#0a0f14",
+              text: "#ffffff",
+            },
+            // Go to substackapi.com to unlock custom redirect
+        
+          };
+        </script>
+        <script src="https://substackapi.com/widget.js" async></script>
+       
+      </div><!-- End Section Title -->
+      
+
+      
+      <!-- Substack Feed Embed -->
+      <div class="container substack-embed-wrapper" data-aos="fade-up">
+        <div id="substack-feed-embed"></div>
+      </div>
+      <hr style="border-color: #ffffff00; border-width: 2px;">
+      <script>
+        window.SubstackFeedWidget = {
+          substackUrl: "mikitoyota.substack.com",
+          posts: 12,
+          filter: "top",
+          layout: "center",
+          hidden: ["comments"],
+          colors: {
+            primary: "#667a90",
+            secondary: "#0a0f14",
+            background: "#FFFFFF00",
+          }
+        };
+      </script>
+      <script src="https://substackapi.com/embeds/feed.js" async></script>
+      <!--Substack feedembed End-->
+      
+    </section><!-- /blog Section -->
+
+    <!-- Hero Exit Section -->
+    <section id="heroexit" class="hero section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Let's Connect</h2>
+            <p class="lead">Curious about working together?</p>
+            <div class="social-links d-flex">
+              <a href="mailto:mikitoyota38@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a href="https://jp.linkedin.com/in/miki-toyota"><i class="bi bi-linkedin"></i></a>
+              <a href="https://medium.com/@mikitoyota"><i class="bi bi-medium"></i></a>
+              <a href="https://mikitoyota.substack.com"><i class="bi bi-substack"></i></a>
+            </div>
+            <p class="lead">Let’s chat and make great things happen.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="assets/img/profile/profile-1.webp" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Exit Section -->    
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>2025 Copyright</span> <strong class="px-1 sitename">Miki Toyota</strong> <span>All Rights Reserved</span></p>
+      </div>
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed with ❤️ by JV</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
