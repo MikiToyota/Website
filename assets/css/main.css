@@ -2055,7 +2055,7 @@ section,
   animation-duration: 13s;
 }
 .floating-shapes .shape:nth-child(6) {
-  top: 80px;
+  top: 10px;
   left: 90%;
   width: 100px;
   height: 100px;
