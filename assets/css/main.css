@@ -1003,36 +1003,36 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Resume Section
+# events Section
 --------------------------------------------------------------*/
-.resume .resume-wrapper .resume-block {
+.events .events-wrapper .events-block {
   margin-bottom: 3rem;
 }
 
-.resume .resume-wrapper .resume-block:last-child {
+.events .events-wrapper .events-block:last-child {
   margin-bottom: 0;
 }
 
-.resume .resume-wrapper .resume-block h2 {
+.events .events-wrapper .events-block h2 {
   font-size: 2rem;
   margin-bottom: 0.8rem;
   font-weight: 700;
 }
 
-.resume .resume-wrapper .resume-block h2 span {
+.events .events-wrapper .events-block h2 span {
   color: var(--accent-color);
 }
 
-.resume .resume-wrapper .resume-block .lead {
+.events .events-wrapper .events-block .lead {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin-bottom: 3rem;
 }
 
-.resume .resume-wrapper .timeline {
+.events .events-wrapper .timeline {
   position: relative;
 }
 
-.resume .resume-wrapper .timeline::before {
+.events .events-wrapper .timeline::before {
   content: "";
   position: absolute;
   left: 20%;
@@ -1042,35 +1042,35 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.resume .resume-wrapper .timeline .timeline-item {
+.events .events-wrapper .timeline .timeline-item {
   display: flex;
   align-items: flex-start;
   margin-bottom: 2.5rem;
   position: relative;
 }
 
-.resume .resume-wrapper .timeline .timeline-item:last-child {
+.events .events-wrapper .timeline .timeline-item:last-child {
   margin-bottom: 0;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-left {
+.events .events-wrapper .timeline .timeline-item .timeline-left {
   width: 20%;
   padding-right: 3rem;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-left .company {
+.events .events-wrapper .timeline .timeline-item .timeline-left .company {
   color: var(--heading-color);
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-left .period {
+.events .events-wrapper .timeline .timeline-item .timeline-left .period {
   color: var(--accent-color);
   font-size: 0.9rem;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-dot {
+.events .events-wrapper .timeline .timeline-item .timeline-dot {
   position: absolute;
   left: calc(20% + 1px);
   transform: translateX(-50%);
@@ -1080,46 +1080,46 @@ section,
   border-radius: 50%;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right {
+.events .events-wrapper .timeline .timeline-item .timeline-right {
   width: 70%;
   padding-left: 3rem;
   margin-top: -4px;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right .position {
+.events .events-wrapper .timeline .timeline-item .timeline-right .position {
   color: var(--heading-color);
   font-size: 1.2rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right .description {
+.events .events-wrapper .timeline .timeline-item .timeline-right .description {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right ul {
+.events .events-wrapper .timeline .timeline-item .timeline-right ul {
   padding-left: 15px;
 }
 
-.resume .resume-wrapper .timeline .timeline-item .timeline-right ul li {
+.events .events-wrapper .timeline .timeline-item .timeline-right ul li {
   padding-bottom: 12px;
 }
 
 @media (max-width: 992px) {
-  .resume .resume-wrapper .resume-block h2 {
+  .events .events-wrapper .events-block h2 {
     font-size: 2rem;
   }
 
-  .resume .resume-wrapper .timeline::before {
+  .events .events-wrapper .timeline::before {
     left: 1rem;
   }
 
-  .resume .resume-wrapper .timeline .timeline-item {
+  .events .events-wrapper .timeline .timeline-item {
     flex-direction: column;
     margin-bottom: 20px;
   }
 
-  .resume .resume-wrapper .timeline .timeline-item .timeline-left {
+  .events .events-wrapper .timeline .timeline-item .timeline-left {
     width: 100%;
     text-align: left;
     padding-right: 0;
@@ -1128,11 +1128,11 @@ section,
     margin-top: -4px;
   }
 
-  .resume .resume-wrapper .timeline .timeline-item .timeline-dot {
+  .events .events-wrapper .timeline .timeline-item .timeline-dot {
     left: calc(1rem + 1px);
   }
 
-  .resume .resume-wrapper .timeline .timeline-item .timeline-right {
+  .events .events-wrapper .timeline .timeline-item .timeline-right {
     width: 100%;
     padding-left: 2.5rem;
   }
