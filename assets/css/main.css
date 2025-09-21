@@ -1419,11 +1419,11 @@ section,
 
 .services .section-title h2 {
   font-family: "Merriweather", serif;
-  font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+  font-size: clamp(36px, 4vw + 1rem, 49px);
   font-weight: 700;
-  line-height: 1.22;
+  line-height: 1.18;
   letter-spacing: -0.01em;
-  color: var(--default-color);
+  color: #667a90;
 }
 
 .services .section-title p {
@@ -1489,9 +1489,9 @@ section,
 
 .services .service-accordion-title {
   font-family: "Merriweather", serif;
-  font-size: clamp(2.25rem, 4vw + 1.25rem, 4.5rem);
+  font-size: clamp(28px, 3.5vw + 1rem, 42px);
   font-weight: 700;
-  line-height: 1.24;
+  line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
@@ -1524,13 +1524,15 @@ section,
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 0 clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2.25rem);
   animation: accordionFade 0.25s ease;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Atlas Grotesk", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.03125rem;
+  line-height: 1.5;
 }
 
 .services .service-accordion-list {
   color: color-mix(in srgb, var(--default-color), transparent 5%);
   display: grid;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Atlas Grotesk", "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.03125rem;
   gap: 1rem;
   line-height: 1.5;
@@ -1545,12 +1547,12 @@ section,
 }
 
 .services .service-accordion-list li::before {
-  content: "\203A";
+  content: ">";
   position: absolute;
   left: 0;
-  top: 0.15rem;
+  top: 0.2rem;
   font-family: "Merriweather", serif;
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 700;
   line-height: 1;
   color: #e24c39;
@@ -1578,7 +1580,7 @@ section,
   }
 
   .services .service-accordion-title {
-    font-size: clamp(1.85rem, 8vw, 3.1rem);
+    font-size: clamp(26px, 8vw, 36px);
   }
 
   .services .service-accordion-indicator {
@@ -1595,18 +1597,34 @@ section,
   }
 
   .services .service-accordion-list li::before {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 991px) {
   .services .section-title h2 {
-    font-size: clamp(2.15rem, 5vw + 1rem, 3.75rem);
+    font-size: clamp(32px, 5vw + 1rem, 42px);
   }
 
   .services .service-accordion-title {
-    font-size: clamp(2rem, 4.5vw + 1.25rem, 3.75rem);
+    font-size: clamp(26px, 4.5vw + 1.25rem, 40px);
   }
+}
+
+.services-tagline {
+  margin: clamp(2.5rem, 6vw, 4rem) auto clamp(3rem, 7vw, 5rem);
+  max-width: 920px;
+  text-align: center;
+  font-family: "Atlas Grotesk", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--default-color);
+  padding: 0 1.5rem;
+}
+
+.services-tagline p {
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
