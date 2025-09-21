@@ -1489,10 +1489,11 @@ section,
 
 .services .service-accordion-title {
   font-family: "Merriweather", serif;
-  font-size: clamp(28px, 3.5vw + 1rem, 42px);
+  font-size: 41px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  color: #667a90;
 }
 
 .services .service-accordion-indicator {
@@ -1580,7 +1581,7 @@ section,
   }
 
   .services .service-accordion-title {
-    font-size: clamp(26px, 8vw, 36px);
+    font-size: clamp(28px, 7.5vw, 34px);
   }
 
   .services .service-accordion-indicator {
@@ -1607,24 +1608,20 @@ section,
   }
 
   .services .service-accordion-title {
-    font-size: clamp(26px, 4.5vw + 1.25rem, 40px);
+    font-size: clamp(30px, 4.5vw, 38px);
   }
 }
 
-.services-tagline {
-  margin: clamp(2.5rem, 6vw, 4rem) auto clamp(3rem, 7vw, 5rem);
-  max-width: 920px;
+.services .section-title .services-tagline {
+  margin: clamp(1.25rem, 3.5vw, 1.85rem) auto 0;
+  max-width: clamp(280px, 82vw, 880px);
   text-align: center;
   font-family: "Atlas Grotesk", "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
-  line-height: 1.6;
-  color: var(--default-color);
-  padding: 0 1.5rem;
-}
-
-.services-tagline p {
-  margin: 0;
+  line-height: 1.55;
+  color: #667a90;
+  padding: 0 clamp(1rem, 3vw, 1.5rem);
 }
 
 /*--------------------------------------------------------------
