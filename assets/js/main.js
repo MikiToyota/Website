@@ -180,6 +180,53 @@
   });
 
   /**
+   * Services accordion interaction
+   */
+  const serviceAccordionItems = document.querySelectorAll('.service-accordion-item');
+
+  const closeServiceItem = (item) => {
+    const header = item.querySelector('.service-accordion-header');
+    const content = item.querySelector('.service-accordion-content');
+    if (!header || !content) return;
+    header.setAttribute('aria-expanded', 'false');
+    content.setAttribute('hidden', '');
+    item.classList.remove('is-open');
+  };
+
+  const openServiceItem = (item) => {
+    const header = item.querySelector('.service-accordion-header');
+    const content = item.querySelector('.service-accordion-content');
+    if (!header || !content) return;
+    header.setAttribute('aria-expanded', 'true');
+    content.removeAttribute('hidden');
+    item.classList.add('is-open');
+  };
+
+  if (serviceAccordionItems.length) {
+    serviceAccordionItems.forEach((item) => {
+      const header = item.querySelector('.service-accordion-header');
+      const content = item.querySelector('.service-accordion-content');
+      if (!header || !content) return;
+
+      header.addEventListener('click', () => {
+        const isOpen = header.getAttribute('aria-expanded') === 'true';
+
+        serviceAccordionItems.forEach((accordionItem) => {
+          if (accordionItem !== item) {
+            closeServiceItem(accordionItem);
+          }
+        });
+
+        if (isOpen) {
+          closeServiceItem(item);
+        } else {
+          openServiceItem(item);
+        }
+      });
+    });
+  }
+
+  /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
   window.addEventListener('load', function(e) {
