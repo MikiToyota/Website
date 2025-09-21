@@ -1452,6 +1452,11 @@ section,
   transition: transform 0.3s ease;
 }
 
+.services .service-item ul {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
 .services .service-item:hover {
   transform: scale(1.05);
 }
