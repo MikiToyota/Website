@@ -772,34 +772,6 @@ section,
   transform: translateY(-2px);
 }
 
-.hero .hero-stats {
-  display: flex;
-  gap: 3rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 576px) {
-  .hero .hero-stats {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-
-.hero .hero-stats .stat-item .stat-number {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--heading-color);
-  line-height: 1;
-}
-
-.hero .hero-stats .stat-item .stat-label {
-  font-size: 0.9rem;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-top: 0.5rem;
-  display: block;
-}
-
 .hero .hero-image {
   position: relative;
   padding: 2rem;
@@ -842,10 +814,6 @@ section,
   }
 
   .hero .cta-buttons {
-    justify-content: center;
-  }
-
-  .hero .hero-stats {
     justify-content: center;
   }
 
