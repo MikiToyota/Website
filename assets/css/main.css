@@ -1559,6 +1559,16 @@ section,
   color: #e24c39;
 }
 
+.services .service-accordion-list .service-keyword-primary {
+  font-weight: 700;
+  color: #000000;
+}
+
+.services .service-accordion-list .service-keyword-secondary {
+  font-weight: 700;
+  color: #667A90;
+}
+
 @keyframes accordionFade {
   from {
     opacity: 0;
@@ -1620,7 +1630,7 @@ section,
   font-size: 17px;
   font-weight: 700;
   line-height: 1.55;
-  color: #667a90;
+  color: #000000;
   padding: 0 clamp(1rem, 3vw, 1.5rem);
 }
 
