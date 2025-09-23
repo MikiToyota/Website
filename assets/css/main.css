@@ -711,7 +711,7 @@ section,
 }
 
 .hero .content h2 {
-  font-size: 5.25rem;
+  font-size: 5.125rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -719,16 +719,31 @@ section,
 
 @media (max-width: 991px) {
   .hero .content h2 {
-    font-size: 3rem;
+    font-size: 2.9375rem;
   }
 }
 
 .hero .hero-headline-line {
   display: block;
+  letter-spacing: -0.01em;
 }
 
 .hero .hero-headline-line-1 {
   white-space: nowrap;
+}
+
+.hero .hero-headline-line-2 {
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .hero .content h2 {
+    font-size: 2.875rem;
+  }
+
+  .hero .hero-headline-line {
+    letter-spacing: -0.0125em;
+  }
 }
 
 .hero .content .lead {
@@ -739,7 +754,7 @@ section,
 
 .hero .hero-subhead-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-bottom: 1.75rem;
@@ -753,9 +768,9 @@ section,
   flex: 0 0 auto;
 }
 
-.hero .hero-subhead-accent {
-  color: var(--accent-color);
+.hero .hero-subhead-highlight {
   font-weight: 700;
+  color: inherit;
 }
 
 @media (min-width: 992px) {
@@ -769,13 +784,16 @@ section,
   gap: 1rem;
   margin-bottom: 0;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .hero .cta-buttons {
-    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
   }
 }
 
