@@ -711,7 +711,7 @@ section,
 }
 
 .hero .content h2 {
-  font-size: 5.25rem;
+  font-size: 5.125rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -719,16 +719,31 @@ section,
 
 @media (max-width: 991px) {
   .hero .content h2 {
-    font-size: 3rem;
+    font-size: 2.9375rem;
   }
 }
 
 .hero .hero-headline-line {
   display: block;
+  letter-spacing: -0.01em;
 }
 
 .hero .hero-headline-line-1 {
   white-space: nowrap;
+}
+
+.hero .hero-headline-line-2 {
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .hero .content h2 {
+    font-size: 2.875rem;
+  }
+
+  .hero .hero-headline-line {
+    letter-spacing: -0.0125em;
+  }
 }
 
 .hero .content .lead {
