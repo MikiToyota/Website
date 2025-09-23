@@ -704,7 +704,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: clamp(84px, 14vw, 140px) 0 clamp(40px, 6vw, 56px);
+  padding: clamp(84px, 14vw, 140px) 0 clamp(32px, 5vw, 48px);
   position: relative;
   overflow: hidden;
   text-align: left;
@@ -755,16 +755,11 @@ section,
 
 .hero .hero-subheadline-wrapper {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 1.25rem;
-  margin: 0 0 1.75rem;
+  margin: 0;
 }
 
 .hero .hero-subheadline {
   margin: 0;
-  flex: 1 1 360px;
   max-width: min(52ch, 100%);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -777,38 +772,34 @@ section,
 
 .hero .cta-buttons {
   display: flex;
+  justify-content: center;
+  align-items: stretch;
   gap: 1rem;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 0 0 auto;
-  row-gap: 0.75rem;
+  width: min(100%, 480px);
+  margin: 1.5rem auto 0;
 }
 
-@media (max-width: 991.98px) {
-  .hero .hero-subheadline-wrapper {
-    gap: 1rem;
-  }
+
+.hero .cta-buttons .btn {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
 }
 
 @media (max-width: 767.98px) {
-  .hero .hero-subheadline-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.5rem;
-  }
-
   .hero .cta-buttons {
-    width: 100%;
-    justify-content: center;
-    margin: 0;
+    width: min(100%, 420px);
   }
 }
 
 @media (max-width: 575.98px) {
   .hero .cta-buttons {
     flex-direction: column;
-    align-items: center;
+    width: min(100%, 320px);
+  }
+
+  .hero .cta-buttons .btn {
+    width: 100%;
   }
 }
 
