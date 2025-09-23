@@ -749,49 +749,59 @@ section,
 }
 
 .hero .content .lead {
-  font-size: 1.15625rem;
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.hero .hero-subheadline {
+.hero .hero-subheadline-wrapper {
   width: 100%;
-  max-width: 42rem;
-  margin: 0 0 1.625rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 0 0 1.75rem;
+}
+
+.hero .hero-subheadline {
+  margin: 0;
+  flex: 1 1 360px;
+  max-width: min(52ch, 100%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   text-align: left;
   text-wrap: balance;
-}
-
-@media (min-width: 1200px) {
-  .hero .hero-subheadline {
-    max-width: none;
-    white-space: nowrap;
-  }
-}
-
-.hero .hero-subhead-highlight {
-  font-weight: 700;
-  color: inherit;
 }
 
 .hero .cta-buttons {
   display: flex;
   gap: 1rem;
-  margin: 1.5rem auto 0;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 0 0 auto;
+  row-gap: 0.75rem;
+}
+
+@media (max-width: 991.98px) {
+  .hero .hero-subheadline-wrapper {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 767.98px) {
-  .hero .hero-subheadline {
-    margin-bottom: 1.5rem;
+  .hero .hero-subheadline-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
   }
 
   .hero .cta-buttons {
     width: 100%;
-    margin-top: 1.5rem;
-    row-gap: 0.75rem;
+    justify-content: center;
+    margin: 0;
   }
 }
 
@@ -879,8 +889,7 @@ section,
   z-index: 0;
 }
 
-.hero .hero-shapes .shape-1,
-.hero .hero-shapes .shape-2 {
+.hero .hero-shapes .shape-1 {
   position: absolute;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   filter: blur(0.1px);
@@ -893,23 +902,6 @@ section,
   top: -80px;
   left: -120px;
   animation: morphShape 15s linear infinite;
-}
-
-.hero .hero-shapes .shape-2 {
-  width: 220px;
-  height: 220px;
-  background-color: color-mix(in srgb, var(--heading-color), transparent 60%);
-  top: auto;
-  right: -40px;
-  bottom: 40px;
-  animation: morphShape 20s linear infinite reverse;
-}
-
-@media (max-width: 991.98px) {
-  .hero .hero-shapes .shape-2 {
-    right: -80px;
-    bottom: 10px;
-  }
 }
 
 #heroexit .hero-image {
