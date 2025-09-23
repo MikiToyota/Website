@@ -704,7 +704,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 80px 0;
+  padding: clamp(84px, 14vw, 140px) 0 clamp(40px, 6vw, 56px);
   position: relative;
   overflow: hidden;
   text-align: left;
@@ -935,7 +935,7 @@ section,
 @media (max-width: 991px) {
   .hero {
     text-align: left;
-    padding: 60px 0;
+    padding: clamp(64px, 18vw, 96px) 0 clamp(40px, 12vw, 48px);
   }
 
   .hero .cta-buttons {
