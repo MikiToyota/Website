@@ -754,7 +754,7 @@ section,
 
 .hero .hero-subhead-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-bottom: 1.75rem;
@@ -768,9 +768,9 @@ section,
   flex: 0 0 auto;
 }
 
-.hero .hero-subhead-accent {
-  color: var(--accent-color);
+.hero .hero-subhead-highlight {
   font-weight: 700;
+  color: inherit;
 }
 
 @media (min-width: 992px) {
@@ -784,13 +784,16 @@ section,
   gap: 1rem;
   margin-bottom: 0;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .hero .cta-buttons {
-    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
   }
 }
 
