@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Questrial",  sans-serif;
-  --nav-font: "Noto Sans",  sans-serif;
+  --default-font: "Open Sans", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Merriweather", serif;
+  --nav-font: "Open Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -710,7 +710,7 @@ section,
 }
 
 .hero .content h2 {
-  font-size: 3.5rem;
+  font-size: 5.25rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -718,12 +718,12 @@ section,
 
 @media (max-width: 991px) {
   .hero .content h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
 .hero .content .lead {
-  font-size: 1.25rem;
+  font-size: 1.15625rem;
   margin-bottom: 2rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
