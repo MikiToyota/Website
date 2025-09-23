@@ -761,6 +761,13 @@ section,
   text-align: left;
 }
 
+@media (min-width: 1200px) {
+  .hero .hero-subheadline {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
+
 .hero .hero-subhead-highlight {
   font-weight: 700;
   color: inherit;
@@ -769,7 +776,7 @@ section,
 .hero .cta-buttons {
   display: flex;
   gap: 1rem;
-  margin: 1.75rem 0 0;
+  margin: 1.75rem auto 0;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
