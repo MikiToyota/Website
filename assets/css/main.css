@@ -772,39 +772,104 @@ section,
   transform: translateY(-2px);
 }
 
-.hero .hero-image {
+.hero .container {
+  position: relative;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .profile-line {
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.hero .profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero .profile-line-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17.5px;
+  line-height: 1.5;
+  color: var(--default-color);
+  flex: 1 1 220px;
+}
+
+.hero .hero-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero .hero-shapes .shape-1,
+.hero .hero-shapes .shape-2 {
+  position: absolute;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  filter: blur(0.1px);
+}
+
+.hero .hero-shapes .shape-1 {
+  width: 320px;
+  height: 320px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+  top: -80px;
+  left: -120px;
+  animation: morphShape 15s linear infinite;
+}
+
+.hero .hero-shapes .shape-2 {
+  width: 220px;
+  height: 220px;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 60%);
+  bottom: -100px;
+  right: -100px;
+  animation: morphShape 20s linear infinite reverse;
+}
+
+#heroexit .hero-image {
   position: relative;
   padding: 2rem;
 }
 
-.hero .hero-image img {
+#heroexit .hero-image img {
   position: relative;
   z-index: 2;
 }
 
-.hero .hero-image .shape-1,
-.hero .hero-image .shape-2 {
+#heroexit .hero-image .shape-1,
+#heroexit .hero-image .shape-2 {
   position: absolute;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   z-index: 1;
+  pointer-events: none;
 }
 
-.hero .hero-image .shape-1 {
-  width: 300px;
-  height: 300px;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  top: -20px;
+#heroexit .hero-image .shape-1 {
+  width: 260px;
+  height: 260px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+  top: -40px;
   right: -20px;
-  animation: morphShape 15s linear infinite;
+  animation: morphShape 18s linear infinite;
 }
 
-.hero .hero-image .shape-2 {
-  width: 200px;
-  height: 200px;
-  background-color: color-mix(in srgb, var(--heading-color), transparent 50%);
-  bottom: -20px;
-  left: -20px;
-  animation: morphShape 20s linear infinite reverse;
+#heroexit .hero-image .shape-2 {
+  width: 180px;
+  height: 180px;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 60%);
+  bottom: -30px;
+  left: -10px;
+  animation: morphShape 22s linear infinite reverse;
 }
 
 @media (max-width: 991px) {
@@ -817,7 +882,11 @@ section,
     justify-content: center;
   }
 
-  .hero .hero-image {
+  .hero .profile-line {
+    justify-content: center;
+  }
+
+  #heroexit .hero-image {
     margin-top: 3rem;
   }
 }
